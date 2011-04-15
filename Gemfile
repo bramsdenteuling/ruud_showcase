@@ -2,6 +2,15 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
 
+gem "mongoid", "~> 2.0"
+gem "bson_ext", "~> 1.2"
+gem 'devise'
+gem 'cancan'
+gem 'jquery-rails'
+gem 'compass'
+gem 'haml'
+
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -25,6 +34,18 @@ gem 'rails', '3.0.5'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+ group :development, :test do
+   gem 'capybara'
+   gem 'cucumber-rails'
+   gem 'database_cleaner'
+   gem 'rspec-rails'
+   gem 'shoulda'
+   gem 'factory_girl_rails'
+   gem 'autotest'
+   gem 'launchy', '0.3.5'
+   gem 'haml-rails'
+   gem 'hpricot'
+   gem 'ruby_parser'
+   gem 'web-app-theme', '>= 0.6.2'
+   gem 'metric_fu'
+ end
