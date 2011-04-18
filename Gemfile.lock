@@ -61,8 +61,6 @@ GEM
       ruby_parser (~> 2.0.4)
       sexp_processor (~> 3.0.3)
     colored (1.2)
-    compass (0.10.6)
-      haml (>= 3.0.4)
     configuration (1.2.0)
     cucumber (0.10.2)
       builder (>= 2.1.2)
@@ -233,7 +231,6 @@ DEPENDENCIES
   bson_ext (~> 1.2)
   cancan
   capybara
-  compass
   cucumber-rails
   database_cleaner
   devise
