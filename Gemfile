@@ -7,7 +7,6 @@ gem "bson_ext", "~> 1.2"
 gem 'devise'
 gem 'cancan'
 gem 'jquery-rails'
-gem 'compass'
 gem 'haml'
 gem 'SystemTimer'
 
