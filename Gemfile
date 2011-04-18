@@ -9,6 +9,7 @@ gem 'cancan'
 gem 'jquery-rails'
 gem 'compass'
 gem 'haml'
+gem 'SystemTimer'
 
 
 # Bundle edge Rails instead:
@@ -48,4 +49,5 @@ gem 'haml'
    gem 'ruby_parser'
    gem 'web-app-theme', '>= 0.6.2'
    gem 'metric_fu'
+   gem 'formtastic'
  end

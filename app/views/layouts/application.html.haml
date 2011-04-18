@@ -16,7 +16,7 @@
         #user-navigation
           %ul.wat-cf
             %li
-              %a{:href => "#"}= t("web-app-theme.profile", :default => "contact")
+              %a{:href => contact_path}= t("web-app-theme.profile", :default => "contact")
             %li
               = render 'devise/menu/login_items'
         #main-navigation

@@ -1,11 +1,16 @@
 RuudShowcase::Application.routes.draw do
+  get "contact", :to => "home#contact"
+
   get "vip/index"
 
   get "home/index"
+  post "home/send_mail"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  resources :users
+  
   devise_for :users
   devise_scope :user do
       get "login", :to => "devise/sessions#new"
