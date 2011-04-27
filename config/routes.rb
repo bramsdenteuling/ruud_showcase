@@ -1,10 +1,13 @@
 RuudShowcase::Application.routes.draw do
-  get "contact", :to => "home#contact"
+  get "contact", :to => "fancybox#contact"
 
   get "vip/index"
 
-  get "home/index"
+  #get "home/index"
   post "home/send_mail"
+  
+  get "fancybox/index"
+  post "fancybox/send_mail"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

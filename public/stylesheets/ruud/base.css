@@ -1,0 +1,107 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: helvetica;
+}
+
+#container
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	height: 600px;
+	width: 960px;
+}
+
+#contact-container
+{
+}
+
+#main
+{
+	height: 600px;
+	width: 960px;
+}
+
+#header
+{
+	position: absolute;
+	top: 25px;
+	width: 100%;
+	height: 65px;
+	z-index: 10;
+	/*background-color: black;*/
+}
+
+.flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align:center;
+  margin: 30px;
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+  width: 900px;
+}
+
+.flash .message p {
+  margin:8px;
+}
+
+.flash .notice {
+  border: 1px solid #1FDF00;
+  background-color: #BBFFB6;
+}
+
+#header-text
+{
+	margin-left: 100px;
+	margin-top: 12px;
+}
+
+h1
+{
+	margin: 0px;
+	text-shadow: 1px 1px 1px #999;
+}
+
+#main-navigation, #user-navigation
+{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	text-align: center;
+	bottom: 55px;
+	font-size: 200%;
+	color: white;
+	text-shadow: 1px 1px 1px #999;
+}
+
+.nav-links a:link, a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+.nav-links a:hover
+{
+	color: lightgrey;
+}
+
+
+#footer
+{
+	position: absolute;
+	bottom: 55px;
+	z-index: 10;
+	right: 10px;
+	font-size: 10px;
+}
+
+.wat-cf li
+{
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+}

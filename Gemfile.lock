@@ -2,7 +2,6 @@ GEM
   remote: http://rubygems.org/
   specs:
     Saikuro (1.1.0)
-    SystemTimer (1.2.3)
     ZenTest (4.5.0)
     abstract (1.0.0)
     actionmailer (3.0.5)
@@ -226,7 +225,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  SystemTimer
   autotest
   bson_ext (~> 1.2)
   cancan

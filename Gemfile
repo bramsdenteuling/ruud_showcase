@@ -8,7 +8,7 @@ gem 'devise'
 gem 'cancan'
 gem 'jquery-rails'
 gem 'haml'
-gem 'SystemTimer'
+# gem 'SystemTimer' # only use for ruby 1.8.7+
 
 
 # Bundle edge Rails instead:
