@@ -12,13 +12,13 @@ RuudShowcase::Application.routes.draw do
   devise_for :users
   devise_scope :user do
       get "login", :to => "devise/sessions#new"
-      #get "logout", :to => "devise/sessions#destroy"
+      get "logout", :to => "devise/sessions#destroy"
   end
-
 
   root :to => "imageloader#index"
   
   get "contact", :to => "fancybox#contact"
+  get "info", :to => "home#info"
 
   get "vip/index"
 
