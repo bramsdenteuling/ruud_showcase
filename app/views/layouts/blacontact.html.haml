@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    = javascript_include_tag :defaults #, :cache => true
+  %body
+    #contact-container
+      #wrapper.wat-cf
+        .flash
+          - flash.each do |type, message|
+            %div{:class => "message #{type}"}
+              %p= message
+      #contact-form
+        =yield
