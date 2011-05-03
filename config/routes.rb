@@ -1,17 +1,12 @@
 RuudShowcase::Application.routes.draw do
-  get "contact", :to => "fancybox#contact"
-
-  get "vip/index"
-
-  #get "home/index"
-  post "home/send_mail"
   
-  get "fancybox/index"
-  post "fancybox/send_mail"
+  #get "fancybox/index"
+  #post "fancybox/send_mail"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  resources :contact_messages, :only => [:create]
   resources :users
   
   devise_for :users
@@ -21,7 +16,14 @@ RuudShowcase::Application.routes.draw do
   end
 
 
-  root :to => "home#index"
+  root :to => "imageloader#index"
+  
+  get "contact", :to => "fancybox#contact"
+
+  get "vip/index"
+
+  get "home/index"
+  post "home/send_mail"
   
 
   # Sample of regular route:
