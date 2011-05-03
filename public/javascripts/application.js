@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$("a.fancybox").fancybox({
 		'width': 500,
 		'height': 400,
-		'hideOnOverlayClick': false
+		'hideOnOverlayClick': true
 	});
 	
 });
