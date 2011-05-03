@@ -1,0 +1,7 @@
+<div id="gallery">
+	<% @photos.each do |photo| -%>
+		<% @photosize = flickr.photos.getSizes(:photo_id => photo.id) %>
+		<% @photosizekeep = @photosize.select {|size| size.label == 'Original'} %>
+		<%= image_tag @photosizekeep[0]['source'], {:title => photo.title} %>
+	<% end -%>
+</div>
