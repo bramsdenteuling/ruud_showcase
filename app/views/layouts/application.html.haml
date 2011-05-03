@@ -32,14 +32,12 @@
         #user-navigation
           .nav-links
             %ul.wat-cf
-              %li
-                %a{:href => contact_path}= t("web-app-theme.profile", :default => "info")
-              %li
-                |
+              %li{:class => "first-item"}
+                %a{:href => 'info', :class => "fancybox"}= t("web-app-theme.profile", :default => "info")
               %li
                 %a{:href => contact_path, :class => "fancybox"}= t("web-app-theme.profile", :default => "contact")
-              %li
-                = render 'devise/menu/login_items'
+              =render 'devise/menu/logout_items'
+              =render 'devise/menu/login_items'
         #main
           = yield
           = javascript_include_tag "gallery"
