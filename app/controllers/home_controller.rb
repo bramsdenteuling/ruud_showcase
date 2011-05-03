@@ -13,5 +13,9 @@ class HomeController < ApplicationController
       #redirect_to("", :notice => 'Your message has been send!')
   #    render :notice => 'Your message has been send!'
   #end
+  
+  def info
+	render :layout => 'clean'
+  end
 
 end
