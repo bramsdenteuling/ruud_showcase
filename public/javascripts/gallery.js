@@ -9,8 +9,8 @@ $('#gallery').galleria({
 	//#width: 960,
 	transitionInitial: 'fade',
 	transition: 'slide',
-	imageCrop: true,
-	imagePan: true,
+	imageCrop: false,
+	imagePan: false,
 	autoplay: 5000
 });
 
