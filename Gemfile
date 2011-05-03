@@ -8,6 +8,7 @@ gem 'devise'
 gem 'cancan'
 gem 'jquery-rails'
 gem 'haml'
+gem 'flickraw'
 # gem 'SystemTimer' # only use for ruby 1.8.7+
 
 
