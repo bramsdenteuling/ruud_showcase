@@ -10,8 +10,13 @@ $('#gallery').galleria({
 	transitionInitial: 'fade',
 	transition: 'slide',
 	imageCrop: true,
-	imagePan: true
+	imagePan: true,
 });
+
+setTimeout(function() {
+	$('.flash').fadeOut('slow', function(){
+      });
+      }, 3000);
 //alert(data);
 //flickr.search('sweden', function(data) { 
 	//$('#gallery').galleria({ 
