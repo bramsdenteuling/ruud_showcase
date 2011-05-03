@@ -11,6 +11,7 @@ $('#gallery').galleria({
 	transition: 'slide',
 	imageCrop: true,
 	imagePan: true,
+	autoplay: 5000
 });
 
 setTimeout(function() {
