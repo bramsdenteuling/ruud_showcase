@@ -1,16 +1,12 @@
 Galleria.loadTheme('/javascripts/galleria/themes/fullscreen/galleria.fullscreen.js');
 
-
-var flickr = new Galleria.Flickr('3ec6a244b24cea97d27b1a0c9c8cd143');
-
 //flickr.getSet('
 $('#gallery').galleria({
-    //height: 600,
-	//#width: 960,
+
 	transitionInitial: 'fade',
 	transition: 'slide',
-	imageCrop: true,
-	imagePan: true,
+	imageCrop: false,
+	imagePan: false,
 	autoplay: 5000
 });
 
