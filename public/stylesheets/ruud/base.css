@@ -161,3 +161,10 @@ h2
 	margin-top: 10px;
 	max-width: 600px;
 }
+
+#contact-form .textfield, #contact-form .textarea
+{
+	width: 400px;
+}
+
+	
