@@ -1,0 +1,15 @@
+<h2><%= @info['title'] %></h2> 
+<% if user_signed_in? %>
+	<a onclick='fancyEdit();' href="#">edit</a>
+	<script language = 'Javascript'>
+		function fancyEdit() {
+			$.fancybox(
+				'',
+				{
+					href: '/info/edit'
+				}
+			);
+		}
+	</script>
+<% end %>
+<p><%= @info['text'] %></p>
