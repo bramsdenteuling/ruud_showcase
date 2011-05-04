@@ -18,7 +18,10 @@ RuudShowcase::Application.routes.draw do
   root :to => "imageloader#index"
   
   get "contact", :to => "fancybox#contact"
-  get "info", :to => "home#info"
+  get "info", :to => "infobox#index"
+  get "info/edit", :to => "infobox#edit"
+  #get "info/update", :to => "infobox#update"
+  put "info/update", :to => "infobox#update"
 
   get "vip/index"
 
