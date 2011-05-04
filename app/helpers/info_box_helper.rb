@@ -1,0 +1,2 @@
+module InfoBoxHelper
+end
