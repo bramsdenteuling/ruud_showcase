@@ -9,7 +9,6 @@ gem 'cancan'
 gem 'jquery-rails'
 gem 'haml'
 gem 'flickraw'
-gem 'mongo_mapper'
 # gem 'SystemTimer' # only use for ruby 1.8.7+
 
 
