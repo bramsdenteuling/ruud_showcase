@@ -44,7 +44,7 @@ p
 #header
 {
 	position: absolute;
-	top: 0px;
+	top: 10px;
 	width: 100%;
 	height: 30px;
 	z-index: 800;
@@ -135,6 +135,7 @@ h2
 #footer p
 {
 	font-size: 10px;
+	display: none;
 }
 
 .wat-cf li
