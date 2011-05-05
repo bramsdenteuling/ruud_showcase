@@ -5,8 +5,9 @@ $('#gallery').galleria({
 
 	transitionInitial: 'fade',
 	transition: 'slide',
-	imageCrop: false,
-	imagePan: false,
+	imageCrop: true,
+	imagePan: true,
+	showInfo: false,
 	autoplay: 5000
 });
 
