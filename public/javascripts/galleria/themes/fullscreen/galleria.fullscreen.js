@@ -60,7 +60,8 @@ Galleria.addTheme({
         });
         
         this.bind(Galleria.RESCALE, function() {
-            POS = this.stageHeight - tab.height()-2;
+            POS = this.getStageHeight - tab.height()-2;
+			POS = document.documentElement.clientHeight - tab.height()-2;
             thumbs.css('top', OPEN ? POS - list.outerHeight() + 2 : POS);
             var img = this.getActiveImage();
             if (img) {
