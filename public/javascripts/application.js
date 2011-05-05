@@ -6,9 +6,16 @@
 $(document).ready(function(){
 	
 	$("h1").textShadow({
-		color: "#999",
-		xoffset: "1px",
-		yoffset: "1px",
+		color: "#666",
+		x: "2px",
+		y: "2px",
+		radius: "1px"
+	});
+	
+	$("user-navigation").textShadow({
+		color: "#666",
+		x: "2px",
+		y: "2px",
 		radius: "1px"
 	});
 	
