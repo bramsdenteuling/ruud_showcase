@@ -1,9 +1,15 @@
+html
+{
+	height: 100%;
+}
+
 body
 {
 	margin: 0px;
 	padding: 0px;
 	font-family: helvetica;
 	font-size: 12px;
+	height: 100%;
 }
 
 p
@@ -80,7 +86,6 @@ p
 h1
 {
 	margin: 0px;
-	text-shadow: 2px 2px 1px #666;
 	font-size: 250%;
 }
 
@@ -96,10 +101,29 @@ h2
 	position: absolute;
 	z-index: 550;
 	width: 100%;
-	text-align: center;
-	bottom: 75px;
+	/*text-align: center;*/
+	bottom: 80px;
 	font-size: 250%;
 	color: white;
+
+}
+
+#user-navigation .nav-links
+{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+#user-navigation ul
+{
+	float: left;
+	position: relative;
+	left: -50%;
+}
+
+.nav-links
+{
 	text-shadow: 2px 2px 1px #666;
 }
 
