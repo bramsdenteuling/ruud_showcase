@@ -8,24 +8,10 @@ $('#gallery').galleria({
 	imageCrop: true,
 	imagePan: true,
 	showInfo: false,
-	autoplay: 5000
+	autoplay: 5000,
 });
 
 setTimeout(function() {
 	$('.flash').fadeOut('slow', function(){
       });
       }, 3000);
-//alert(data);
-//flickr.search('sweden', function(data) { 
-	//$('#gallery').galleria({ 
-		//dataSource: data,
-		//height: 600,
-		//width: 960,
-		//imageCrop: true
-	//}); 
-//});
-//$('#gallery').galleria({
-	//height: 600,
-	//width: 960,
-	//imageCrop: true
-//});

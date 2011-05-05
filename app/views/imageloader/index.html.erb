@@ -1,5 +1,5 @@
 <div id="gallery">
 	<% @photos.each do |photo| -%>
-		<%= image_tag make_flickr_url(photo, 'z'), {:title => photo.title,:alt =>""} %>
+		<%= link_to image_tag(make_flickr_url(photo, 't'), {:title => photo.title,:alt =>""}), make_flickr_url(photo, 'z') %>
 	<% end -%>
 </div>

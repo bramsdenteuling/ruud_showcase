@@ -94,10 +94,10 @@ h2
 #main-navigation, #user-navigation
 {
 	position: absolute;
-	z-index: 800;
+	z-index: 550;
 	width: 100%;
 	text-align: center;
-	bottom: 50px;
+	bottom: 75px;
 	font-size: 250%;
 	color: white;
 	text-shadow: 1px 1px 1px #999;
@@ -129,7 +129,7 @@ h2
 {
 	position: absolute;
 	bottom: 55px;
-	z-index: 800;
+	z-index: 550;
 	right: 10px;
 }
 #footer p
@@ -141,11 +141,13 @@ h2
 {
 	display: inline;
 	list-style-type: none;
+	margin: 0px;
 	padding-right: 0px;
 }
 
 .wat-cf
 {
+	margin: 0px;
 	margin-left: 0px;
 	padding-left: 0px;
 	
@@ -166,5 +168,3 @@ h2
 {
 	width: 400px;
 }
-
-	
