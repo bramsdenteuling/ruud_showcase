@@ -22,8 +22,8 @@ RuudShowcase::Application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => 'localhost.net',
-    :user_name            => 'bramdenteuling',
-    :password             => 'marillion',
+    :user_name            => '',
+    :password             => '',
     :authentication       => 'plain',
     :enable_starttls_auto => true  }
 
