@@ -5,19 +5,19 @@
 
 $(document).ready(function(){
 	
-	$("h1").textShadow({
-		color: "#666",
-		x: "2px",
-		y: "2px",
-		radius: "1px"
-	});
-	
-	$("user-navigation").textShadow({
-		color: "#666",
-		x: "2px",
-		y: "2px",
-		radius: "1px"
-	});
+	$("#header").textShadow({
+			'xoffset': '-5px',
+			'yoffset': '-5px',
+			'color': '#999',
+			'radius': '1px',
+		});
+		
+		$("#user-navigation .nav-links").textShadow({
+			'xoffset': '-5px',
+			'yoffset': '-5px',
+			'color': '#999',
+			'radius': '1px',
+		});
 	
 	$("a.fancybox").fancybox({
 		'width': 500,
