@@ -2,6 +2,6 @@
 	<% @photos.each do |photo| -%>
 		<% @photosize = flickr.photos.getSizes(:photo_id => photo.id) %>
 		<% @photosizekeep = @photosize.select {|size| size.label == 'Original'} %>
-		<%= image_tag @photosizekeep[0]['source'], {:title => photo.title} %>
+		<%= link_to image_tag(make_flickr_url(photo, 't'), {:title => photo.title,:alt =>""}), @photosizekeep[0]['source'] %>
 	<% end -%>
 </div>
