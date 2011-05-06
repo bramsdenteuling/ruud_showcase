@@ -5,18 +5,12 @@
 
 $(document).ready(function(){
 	
-	$("#header").textShadow({
-			'xoffset': '-5px',
-			'yoffset': '-5px',
-			'color': '#999',
+	$(".shadow").textShadow({
+			'xoffset': '-6px',
+			'yoffset': '-6px',
+			'color': '#666666',
 			'radius': '1px',
-		});
-		
-		$("#user-navigation .nav-links").textShadow({
-			'xoffset': '-5px',
-			'yoffset': '-5px',
-			'color': '#999',
-			'radius': '1px',
+			'opacity': '80',
 		});
 	
 	$("a.fancybox").fancybox({
