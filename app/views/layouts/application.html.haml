@@ -17,8 +17,8 @@
         #header
           #header-text
             .nav-links
-              %h1
-                %a{:href => "/"} Ruud van Doorn
+              %h1{:class => "shadow"}
+                %a{:href => "/",} Ruud van Doorn
         .flash
           - flash.each do |type, message|
             %div{:class => "message #{type}"}
@@ -28,7 +28,7 @@
             %ul.wat-cf
         #user-navigation
           .nav-links
-            %ul.wat-cf
+            %ul.wat-cf{:class => "shadow"}
               %li{:class => "first-item"}
                 %a{:href => 'info', :class => "fancybox"}= t("web-app-theme.profile", :default => "info")
               %li
