@@ -33,6 +33,8 @@ p
 #wrapper
 {
 	height: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 #contact-container
@@ -45,13 +47,15 @@ p
 	width: 960px;*/
 	height: 100%;
 	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 #header
 {
 	position: absolute;
 	top: 10px;
-	width: 100%;
+	width: 400px;
 	height: 30px;
 	z-index: 800;
 	/*background-color: black;*/
@@ -92,7 +96,6 @@ h1
 h2
 {
 	margin: 0px;
-	text-shadow: 1px 1px 1px #999;
 	font-size: 200%;
 }
 
@@ -124,7 +127,6 @@ h2
 
 .nav-links
 {
-	text-shadow: 2px 2px 1px #666;
 }
 
 .nav-links a:link, .nav-links a:visited
@@ -180,7 +182,9 @@ h2
 
 #infobox h2
 {
+/*
 	display: inline;
+*/
 }
 
 #infotext
@@ -192,4 +196,15 @@ h2
 #contact-form .textfield, #contact-form .textarea
 {
 	width: 400px;
+}
+
+.shadow
+{
+	text-shadow: 2px 2px 2px #666;
+/*
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')";
+*/
+/*
+	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2,Color='gray', Positive='true')";
+*/
 }
