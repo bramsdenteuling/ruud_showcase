@@ -1,7 +1,5 @@
 <div id="gallery">
 	<% @photos.each do |photo| -%>
-		<% @photosize = flickr.photos.getSizes(:photo_id => photo.id) %>
-		<% @photosizekeep = @photosize.select {|size| size.label == 'Original'} %>
-		<%= link_to image_tag(make_flickr_url(photo, 't'), {:title => photo.title,:alt =>""}), @photosizekeep[0]['source'] %>
+		<%= link_to image_tag(make_flickr_url(photo, 't'), {:title => photo.title,:alt =>""}), make_flickr_url(photo, 'o') %>
 	<% end -%>
 </div>
