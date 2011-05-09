@@ -23,6 +23,9 @@ RuudShowcase::Application.routes.draw do
   #get "info/update", :to => "infobox#update"
   put "info/update", :to => "infobox#update"
 
+  get "photoset/edit", :to => "photoset#edit"
+  put "photoset/update", :to => "photoset#update"
+
   get "vip/index"
 
   get "home/index"
