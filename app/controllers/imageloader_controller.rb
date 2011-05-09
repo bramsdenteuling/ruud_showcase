@@ -1,6 +1,7 @@
 class ImageloaderController < ApplicationController
   
   rescue_from FlickRaw::FailedResponse, :with => :failed_response
+  rescue_from NoMethodError, :with => :failed_response
 
   def index
     @set = Photoset.where(doc_id: '1').first
