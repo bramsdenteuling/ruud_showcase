@@ -35,6 +35,7 @@
                 %a{:href => contact_path, :class => "fancybox"}= t("web-app-theme.profile", :default => "contact")
               =render 'devise/menu/logout_items'
               =render 'devise/menu/login_items'
+              &nbsp;
         #main
           = yield
           = javascript_include_tag "gallery"
