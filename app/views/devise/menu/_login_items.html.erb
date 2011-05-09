@@ -1,5 +1,8 @@
 <% if user_signed_in? %>
+  <li>
+    <%= link_to('edit set', 'photoset/edit', :class => "editsetid shadow fancybox") %>      
+  </li>
   <li class='last-item'>
-	<%= link_to('logout', 'logout', :class => "logout shadow") %>        
+  	<%= link_to('logout', 'logout', :class => "logout shadow") %>        
   </li>
 <% end %>
