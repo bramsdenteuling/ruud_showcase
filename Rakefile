@@ -4,12 +4,15 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-if Rails.env?('test')
-require 'metric_fu' 
-MetricFu::Configuration.run do |config|
-  config.rcov[:test_files] = ['spec/**/*_spec.rb']
-  config.rcov[:rcov_opts] << "-Ispec" # Needed to find spec_helper
-end
+begin
+  require 'metric_fu' 
+  MetricFu::Configuration.run do |config|
+    config.rcov[:test_files] = ['spec/**/*_spec.rb']
+    config.rcov[:rcov_opts] << "-Ispec" # Needed to find spec_helper
+  end
+rescue LoadError
+  desc 'metric_fu rake task not available (metric_fu not installed)'
+  puts 'metric_fu not installed!'
 end
 
 RuudShowcase::Application.load_tasks
