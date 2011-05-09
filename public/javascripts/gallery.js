@@ -1,4 +1,4 @@
-Galleria.loadTheme('/javascripts/galleria/themes/fullscreen/galleria.fullscreen.js');
+Galleria.loadTheme('/javascripts/galleria/themes/fullscreen/galleria.fullscreen.min.js');
 
 //flickr.getSet('
 $('#gallery').galleria({
