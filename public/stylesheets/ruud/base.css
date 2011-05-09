@@ -7,7 +7,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;
 	font-size: 12px;
 	height: 100%;
 }
@@ -120,13 +120,10 @@ h2
 
 #user-navigation ul
 {
+  height: 40px;
 	float: left;
 	position: relative;
 	left: -50%;
-}
-
-.nav-links
-{
 }
 
 .nav-links a:link, .nav-links a:visited
@@ -176,8 +173,7 @@ h2
 {
 	margin: 0px;
 	margin-left: 0px;
-	padding-left: 0px;
-	
+	padding-left: 0px;	
 }
 
 #infobox h2
