@@ -98,7 +98,7 @@ body { background: #000 }
     right: 0;
     top: 0;
     height: 100%;
-    background: url(r.gif) no-repeat 50% 50%;
+    background: url(r.png) no-repeat 50% 50%;
     position: absolute;
     cursor: pointer;
     z-index: 2;
@@ -107,7 +107,7 @@ body { background: #000 }
 .galleria-image-nav-left {
     left: 0;
     right: auto;
-    background-image: url(l.gif);
+    background-image: url(l.png);
 }
 .galleria-loader {
     width: 30px;
