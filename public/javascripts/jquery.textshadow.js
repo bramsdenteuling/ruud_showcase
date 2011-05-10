@@ -14,6 +14,7 @@
 		return this.each(function() {
 			var obj = $(this);
 			obj.removeTextShadow();
+      obj.css("text-shadow","") // Very strange bug in IE7 and IE8. Adding this resolves it.
 			var shadowarray = obj.css("text-shadow").split(" ");
 			var sradi = parseInt(shadowarray[3], 10);
 			var text = "<span class='jQshad'>" + obj.html() + "</span>";
