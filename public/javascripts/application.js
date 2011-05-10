@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$(".shadow").textShadow({
 			'xoffset': '-6px',
 			'yoffset': '-6px',
-			'color': '#666666',
+			'color': '#222222',
 			'radius': '1px',
 			'opacity': '80'
 		});
