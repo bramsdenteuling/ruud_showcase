@@ -8,7 +8,7 @@ $('#gallery').galleria({
 	imageCrop: true,
 	imagePan: true,
 	showInfo: false,
-	autoplay: 5000,
+	autoplay: 5000
 });
 
 setTimeout(function() {

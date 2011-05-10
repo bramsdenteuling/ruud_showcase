@@ -10,7 +10,7 @@ $(document).ready(function(){
 			'yoffset': '-6px',
 			'color': '#666666',
 			'radius': '1px',
-			'opacity': '80',
+			'opacity': '80'
 		});
 	
 	$("a.fancybox").fancybox({
