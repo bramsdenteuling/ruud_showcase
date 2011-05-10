@@ -196,11 +196,5 @@ h2
 
 .shadow
 {
-	text-shadow: 2px 2px 2px #666;
-/*
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#666666')";
-*/
-/*
-	-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2,Color='gray', Positive='true')";
-*/
+  text-shadow: 2px 2px 3px #222;
 }
