@@ -4,8 +4,8 @@ Galleria.loadTheme('/javascripts/galleria/themes/fullscreen/galleria.fullscreen.
 $('#gallery').galleria({
 
 	transitionInitial: 'fade',
-	transition: 'fade',
-  transitionSpeed: 1500,
+	transition: 'slide',
+  transitionSpeed: 800,
 	imageCrop: true,
 	imagePan: true,
 	showInfo: false,
