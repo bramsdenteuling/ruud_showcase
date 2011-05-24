@@ -1,0 +1,16 @@
+<h1>Contact Form</h1>
+
+<%= simple_form_for(@contact_form, :url => contact_send_url(@contact_form), :html => { :method => :post }, :remote => true) do |f|%>
+  <%= f.error_notification %>
+
+ <div class="inputs">
+   <%= f.input :name %>
+   <%= f.input :email %>
+   <%= f.input :message%>
+ </div>
+
+ <div class="actions">
+   <%= f.button :submit, 'Send Email', :class => "fancybox" %>
+ </div>
+ 
+<% end %>

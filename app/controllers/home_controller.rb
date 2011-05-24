@@ -5,17 +5,23 @@ class HomeController < ApplicationController
   end
   
   def contact
-      @user = User.new
+    @contact_form = ContactForm.new
   end
 
-  #def send_mail
-  #    ContactMailer.contact_email(params[:email]).deliver
-      #redirect_to("", :notice => 'Your message has been send!')
-  #    render :notice => 'Your message has been send!'
-  #end
+  def create 
+    @contact_form = ContactForm.new(params[:contact_form])
+    if @contact_form.deliver
+      respond_to do |format|
+        format.html { redirect_to root_url, :notice => "Your message was successfully send."}
+        format.js {render}
+      end
+    else
+      render :action => "contact"
+    end
+  end
   
   def info
-	render :layout => 'clean'
+	  render :layout => 'clean'
   end
 
 end

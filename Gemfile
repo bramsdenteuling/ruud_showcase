@@ -9,6 +9,9 @@ gem 'cancan'
 gem 'jquery-rails'
 gem 'haml'
 gem 'flickraw'
+gem 'mail_form'
+gem 'simple_form'
+gem 'g_fancybox'
 # gem 'SystemTimer' # only use for ruby 1.8.7+
 
 

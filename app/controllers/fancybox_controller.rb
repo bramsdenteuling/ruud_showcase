@@ -1,11 +1,8 @@
 class FancyboxController < ApplicationController
-  layout 'contact'
-  
-  def index
-  end
+  layout 'clean'
   
   def contact
-      @user = User.new
+    @contact_form = ContactForm.new
   end
   
 end
