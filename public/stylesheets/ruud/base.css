@@ -7,7 +7,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	font-family: helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 12px;
 	height: 100%;
 }
@@ -37,8 +37,14 @@ p
 	padding: 0px;
 }
 
-#contact-container
+#contact-form label
 {
+  display: block;
+}
+
+#contact-form abbr
+{
+  text-decoration:none;
 }
 
 #main
@@ -90,14 +96,14 @@ p
 
 h1
 {
-	font-family: "HelveticaNeue-Light", courier-monospace, helvetica, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin: 0px;
 	font-size: 30px;
 }
 
 h2
 {
-	font-family: "HelveticaNeue-Light", helvetica, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin: 0px;
 	font-size: 20px;
 }
