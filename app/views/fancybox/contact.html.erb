@@ -1,12 +1,19 @@
-<h1>Contact Form</h1>
+<div id="contact-form">
+<h2>Contact</h2>
 
 <%= simple_form_for(@contact_form, :url => contact_send_url(@contact_form), :html => { :method => :post }, :remote => true) do |f|%>
   <%= f.error_notification %>
 
  <div class="inputs">
-   <%= f.input :name %>
-   <%= f.input :email %>
-   <%= f.input :message%>
+  <p>
+   <%= f.input :name, :input_html => { :class => 'textfield' }%>
+  </p>
+  <p>
+   <%= f.input :email, :input_html => { :class => 'textfield' } %>
+  </p>
+  <p>
+  <%= f.input :message, :as => :text, :input_html => {:rows => '15', :class => 'textarea' }%>
+  </p>
  </div>
 
  <div class="actions">
@@ -14,3 +21,4 @@
  </div>
  
 <% end %>
+</div>
