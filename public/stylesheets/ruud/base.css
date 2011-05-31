@@ -37,6 +37,11 @@ p
 	padding: 0px;
 }
 
+#clean
+{
+	overflow: hidden;
+}
+
 #contact-form label
 {
   display: block;
