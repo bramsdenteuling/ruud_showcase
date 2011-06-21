@@ -9,6 +9,7 @@ class ImageloaderController < ApplicationController
     @photos = flickr.photosets.getPhotos(:photoset_id => set_id, :extras => 'original_format')
     @photos = @photos.to_hash()
     @photos = @photos["photo"]
+    render 'org'
   end
   
   def failed_response
