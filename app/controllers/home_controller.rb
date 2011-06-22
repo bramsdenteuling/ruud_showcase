@@ -12,8 +12,8 @@ class HomeController < ApplicationController
     @contact_form = ContactForm.new(params[:contact_form])
     if @contact_form.deliver
       respond_to do |format|
-        format.html { redirect_to root_url, :notice => "Your message was successfully send."}
-        format.js {render}
+        format.html { redirect_to root_url, :notice => "Your message was successfully sent."}
+        format.js {render :layout => 'clean'}
       end
     else
       render :action => "contact"
